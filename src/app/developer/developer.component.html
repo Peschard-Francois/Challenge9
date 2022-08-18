@@ -1,0 +1,11 @@
+<ul>
+  <h3>Nom : {{ficheDev.lastName}}</h3>
+  <h3>Prénom : {{ficheDev.firstName}}</h3>
+  <h3>Âge : {{ficheDev.age}}</h3>
+  <h3>Bio : {{ficheDev.bio}}</h3>
+  <li *ngFor="let skill of skills">
+    <app-skill [skills]="skill"></app-skill>
+  </li>
+</ul>
+
+
